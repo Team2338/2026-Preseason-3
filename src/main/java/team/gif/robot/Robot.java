@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import team.gif.robot.commands.drivetrain.DriveSwerve;
+import team.gif.robot.subsystems.Shooter;
 import team.gif.robot.subsystems.drivers.Pigeon2_0;
 import team.gif.robot.subsystems.drivers.swerve.utilities.SwerveConfiguration;
 import team.gif.robot.subsystems.drivers.swerve.SwerveDrivetrain;
@@ -26,7 +27,7 @@ public class Robot extends TimedRobot {
     private static Command autonomousCommand;
     private RobotContainer robotContainer;
     public static OI oi;
-
+    public static Shooter shooter;
     public static Pigeon2_0 pigeon;
 
     public static SwerveConfiguration swerveConfig;
