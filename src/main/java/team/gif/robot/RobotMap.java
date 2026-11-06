@@ -4,8 +4,8 @@ import team.gif.robot.subsystems.drivers.swerve.utilities.SwerveMap;
 
 public abstract class RobotMap {
     // Controllers
-    public static final int RMOTOR_ID = 0;
-    public static final int LMOTOR_ID =- 0;
+    public static final int RMOTOR_ID = 87;
+    public static final int LMOTOR_ID =- 31;
     public static final int DRIVER_CONTROLLER_ID = 0;
     public static final int AUX_CONTROLLER_ID = 1;
     public static final int TEST_CONTROLLER_ID = 2;
