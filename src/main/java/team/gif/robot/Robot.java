@@ -4,10 +4,12 @@
 
 package team.gif.robot;
 
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import team.gif.robot.commands.drivetrain.DriveSwerve;
+import team.gif.robot.subsystems.Collecter;
 import team.gif.robot.subsystems.drivers.Pigeon2_0;
 import team.gif.robot.subsystems.drivers.swerve.utilities.SwerveConfiguration;
 import team.gif.robot.subsystems.drivers.swerve.SwerveDrivetrain;
@@ -28,6 +30,7 @@ public class Robot extends TimedRobot {
     public static OI oi;
 
     public static Pigeon2_0 pigeon;
+    public static Collecter collecter;
 
     public static SwerveConfiguration swerveConfig;
     public static SwerveDrivetrain swerveDrive;
@@ -48,6 +51,7 @@ public class Robot extends TimedRobot {
         robotContainer = new RobotContainer();
 
         pigeon = new Pigeon2_0(RobotMap.PIGEON_ID);
+        collecter = new Collecter();
 
         swerveConfig = new SwerveConfiguration(new RobotMap.Mk4Map(), new Constants.Mk4Constants(), TalonFXDriveMotor::new, TalonFXTurnMotor::new, CANCoderEncoder::new);
 //        swerveConfig = new SwerveConfiguration(new RobotMap.Mk3Map(), new Constants.Mk3Constants(), SparkMaxDriveMotor::new, TalonSRXTurnMotorEncoder::new, null);

@@ -86,4 +86,6 @@ public final class Constants {
     public static final class Joystick {
         public static final double DEADBAND = 0.1;
     }
+
+    public static final double COLLECTOR_SPEED = 0.35;
 }
