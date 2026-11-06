@@ -9,16 +9,16 @@ import team.gif.robot.Robot;
 import team.gif.robot.RobotMap;
 
 public class Shooter extends SubsystemBase {
-    private TalonSRX talon;
+    private TalonSRX shooter;
 
 
     public Shooter() {
-        talon = new TalonSRX(RobotMap.TALON_ID);
-        talon.configFactoryDefault();
-        talon.setNeutralMode(NeutralMode.Brake);
+        shooter = new TalonSRX(RobotMap.SHOOTER_ID);
+        shooter.configFactoryDefault();
+        shooter.setNeutralMode(NeutralMode.Brake);
     }
     public void moveMotor(double percentoutput){
-        talon.set(ControlMode.PercentOutput, percentoutput);
+        shooter.set(ControlMode.PercentOutput, percentoutput);
 
         }
     }

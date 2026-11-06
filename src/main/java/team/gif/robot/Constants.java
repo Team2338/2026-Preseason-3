@@ -87,5 +87,5 @@ public final class Constants {
         public static final double DEADBAND = 0.1;
 
     }
-    public static final double SHOOTER_PERCENT_OUTPUT = 0.0;
+    public static final double SHOOTER_PERCENT_OUTPUT = 0.75;
 }
